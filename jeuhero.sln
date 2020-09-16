@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jeuhero.Web.UI", "coremvc\jeuhero.Web.UI.csproj", "{858C8E52-D935-4CB2-8A13-F77CBFC5B3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jeuhero.Core.Data", "jeuhero.Core.Data\jeuhero.Core.Data.csproj", "{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{7782D9F8-454D-44C6-B299-3431D636C021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jeuhero.backoffice.Web.UI", "jeuhero.BackOffice.Web.UI\jeuhero.backoffice.Web.UI.csproj", "{36A3D78A-9634-4C4D-B610-B2963F3B0258}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{858C8E52-D935-4CB2-8A13-F77CBFC5B3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858C8E52-D935-4CB2-8A13-F77CBFC5B3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858C8E52-D935-4CB2-8A13-F77CBFC5B3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858C8E52-D935-4CB2-8A13-F77CBFC5B3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A3D78A-9634-4C4D-B610-B2963F3B0258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A3D78A-9634-4C4D-B610-B2963F3B0258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A3D78A-9634-4C4D-B610-B2963F3B0258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A3D78A-9634-4C4D-B610-B2963F3B0258}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF} = {7782D9F8-454D-44C6-B299-3431D636C021}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FD7D342-5FFF-4C60-A96E-6959C1636634}
+	EndGlobalSection
+EndGlobal

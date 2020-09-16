@@ -1,0 +1,32 @@
+﻿@using jeuhero.Core.Data;
+@model List<Aventure>
+
+@{
+
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="row justify-content-center">
+	<a asp-controller="Aventure" asp-action="Create" class="btn btn-primary">Nouvelle Aventure</a>
+</div>
+
+
+<h2 class="text-center small">Vos dernières aventures</h2>
+<div class="row">
+
+    @foreach (var aventure in Model)
+	{
+
+		<a href="#" class="card border m-2 text-center" style="width: 7rem;">
+			<div class="card-body">
+				@aventure.Title
+			</div>
+		</a>
+
+	}
+
+
+
+</div>
+
