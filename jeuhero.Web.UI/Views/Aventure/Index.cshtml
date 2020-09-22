@@ -1,4 +1,4 @@
-﻿@using jeuhero.Core.Data;
+﻿@using jeuhero.Core.Data.Models;
 @model List<Aventure>
 
 @{
@@ -21,6 +21,9 @@
 		<a href="#" class="card border m-2 text-center" style="width: 7rem;">
 			<div class="card-body">
 				@aventure.Title
+				<p>
+					@aventure.Content
+				</p>
 			</div>
 		</a>
 
