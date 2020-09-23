@@ -9,22 +9,22 @@
 
 ## Install Steps
 
-### 1. You have to generate the project to install all NuGet to run the app or run the following command : 
+### Step 1. You have to generate the project to install all NuGet to run the app or run the following command : 
 ```
 Update-Package
 ```
 
-### 2. You have to install SQLServer.
+### Step 2. You have to install SQLServer.
 
-### 3. You have to install SQL Management Server 2017.
+### Step 3. You have to install SQL Management Server 2017.
 
-### 4. Create your database.
+### Step 4. Create your database.
 
-### 5. In appsettings.json you have to change parameter `Server` and `DataBase` to your own environnement.
+### Step 5. In appsettings.json you have to change parameter `Server` and `DataBase` to your own environnement.
 
-### 5.1 Right click on jeuhero.BackOffice.Web.UI project and click on `Manage secret user data` and change them for your own environnement. To connect with facebook.
+### Step 5.1 Right click on jeuhero.BackOffice.Web.UI project and click on `Manage secret user data` and change them for your own environnement. To connect with facebook.
 
-### 6. You have to run those command in the jeuhero.BackOffice.Web.UI project: 
+### Step 6. You have to run those command in the jeuhero.BackOffice.Web.UI project: 
 ``` 
    dotnet ef migrations add CreateIdentitySchema --context jeuherobackofficeWebUIContext
    dotnet ef database update --context jeuherobackofficeWebUIContext 
@@ -37,7 +37,7 @@ If dotnet ef is not recognized  run this command  :
 dotnet tool install --global dotnet -ef
 ```
 
-### 7. You have to run those command in the jeuhero.Core.Data project: 
+### Step 7. You have to run those command in the jeuhero.Core.Data project: 
 ``` 
    dotnet ef migrations add MigrationName
    dotnet ef database update
@@ -46,7 +46,7 @@ dotnet tool install --global dotnet -ef
 
 ## BackOffice.Web.UI
 
-I create a BackOffice to manage the content of the game
+I create a BackOffice to manage the content of the game. You can register with your Facebook account.
 
 ## jeuhero.Web.UI 
 
