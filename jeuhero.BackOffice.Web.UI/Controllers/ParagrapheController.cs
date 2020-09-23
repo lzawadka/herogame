@@ -13,7 +13,6 @@ namespace jeuhero.backoffice.Web.UI.Controllers
         private DefaultContext _context = null;
         #endregion
 
-
         #region Constructeur
         public ParagrapheController(DefaultContext context)
         {
@@ -22,10 +21,16 @@ namespace jeuhero.backoffice.Web.UI.Controllers
         #endregion
 
         #region Méthodes
+
+        #region Index
         public IActionResult Index()
         {
             return View();
         }
+
+        #endregion
+
+        #region Create
 
         public IActionResult Create()
         {
@@ -35,7 +40,7 @@ namespace jeuhero.backoffice.Web.UI.Controllers
         [HttpPost]
         public IActionResult Create(Paragraphe paragraphe)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Paragraphes.Add(paragraphe);
                 _context.SaveChanges();
@@ -45,6 +50,9 @@ namespace jeuhero.backoffice.Web.UI.Controllers
             return View();
         }
 
+        #endregion
+
+        #region Edit
         public IActionResult Edit(int id)
         {
             Paragraphe paragraphe = null;
@@ -57,10 +65,12 @@ namespace jeuhero.backoffice.Web.UI.Controllers
         [HttpPost]
         public IActionResult Edit(Paragraphe paragraphe)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Attach<Paragraphe>(paragraphe);
+                _context.Entry(paragraphe).Property(item => item.Number).IsModified = true;
                 _context.Entry(paragraphe).Property(item => item.Title).IsModified = true;
+                _context.Entry(paragraphe).Property(item => item.Description).IsModified = true;
 
                 _context.SaveChanges();
 
@@ -71,6 +81,8 @@ namespace jeuhero.backoffice.Web.UI.Controllers
                 return View(paragraphe);
             }
         }
+        #endregion
+
 
         #endregion
     }
