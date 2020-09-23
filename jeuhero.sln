@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConnectionDataBase", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAuthentifiactionFacebook", "TestAuthentifiactionFacebook\TestAuthentifiactionFacebook.csproj", "{200BF49B-EB56-48A8-B425-1BE0DF3EC75E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{0A2047A5-31C9-4AC3-B42F-2D5FD41428A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.BackOffice.Web.UI", "UnitTest.BackOffice.Web.UI\UnitTest.BackOffice.Web.UI.csproj", "{F9A37647-66F8-4182-9E69-F9E15CA22A7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{200BF49B-EB56-48A8-B425-1BE0DF3EC75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200BF49B-EB56-48A8-B425-1BE0DF3EC75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200BF49B-EB56-48A8-B425-1BE0DF3EC75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A37647-66F8-4182-9E69-F9E15CA22A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A37647-66F8-4182-9E69-F9E15CA22A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A37647-66F8-4182-9E69-F9E15CA22A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A37647-66F8-4182-9E69-F9E15CA22A7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{222F5BD9-4B00-44B3-8CE2-A45525FCFCBF} = {7782D9F8-454D-44C6-B299-3431D636C021}
 		{1491D1BC-947E-474B-8CB7-9B102F81B6B8} = {832C8AB6-6F8D-46FB-84BB-076563B8B24F}
 		{200BF49B-EB56-48A8-B425-1BE0DF3EC75E} = {832C8AB6-6F8D-46FB-84BB-076563B8B24F}
+		{F9A37647-66F8-4182-9E69-F9E15CA22A7A} = {0A2047A5-31C9-4AC3-B42F-2D5FD41428A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FD7D342-5FFF-4C60-A96E-6959C1636634}
